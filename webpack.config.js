@@ -2,20 +2,28 @@ const webpack = require("webpack");
 const path = require("path");
 
 module.exports = {
-    entry:["./entry.js"],
+    entry: ["./entry.js"],
     output: {
-        path:path.resolve(__dirname,'dist'),
+        path: path.resolve(__dirname, 'dist'),
         filename: "bundle.js"
     },
-    mode:'development',
+    mode: 'development',
     module: {
         rules: [
             {
-                test:/\.css$/,
-                use:[
+                test: /\.css$/,
+                use: [
                     'style-loader',
                     'css-loader'
                 ]
+            },
+            {
+                test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+                loader: 'url-loader',
+                options: {
+                    limit: 8192,
+                    name: path.posix.join('', 'img2/[name].[ext]')
+                }
             }
         ]
     },
