@@ -12,3 +12,9 @@
     }
 </script>
 
+<style>
+    .main > p {
+        color:yellowgreen;
+    }
+</style>
+
