@@ -12,7 +12,7 @@
     }
 </script>
 
-<style>
+<style lang="css">
     .main > p {
         color:yellowgreen;
     }
