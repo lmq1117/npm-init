@@ -1,0 +1,26 @@
+{
+  "name": "npm-init",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmq1117/npm-init.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lmq1117/npm-init/issues"
+  },
+  "homepage": "https://github.com/lmq1117/npm-init#readme",
+  "devDependencies": {
+    "vue": "^2.5.22",
+    "vue-loader": "^15.6.0",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1"
+  }
+}
